@@ -3,6 +3,13 @@
   overflow: auto;
   background: #fbfbfb;
   background-size: cover;
+  padding-bottom: 10px;
+}
+.carousel-slide a,
+.dolist-container a,
+.item1 a {
+  text-decoration: none;
+  color: #eab571;
 }
 
 #particles {
@@ -11,7 +18,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
 }
 /* ============================================================================== */
 
@@ -76,6 +82,7 @@
   line-height: 1.4;
   opacity: 0.3;
   transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .item1:hover,
@@ -84,16 +91,7 @@
 }
 
 .lm {
-  font-size: 14px;
-  color: #eab571;
-  margin-top: 10px;
   float: right;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.lm:hover {
-  text-decoration: underline;
 }
 
 .dolist-container {
@@ -122,20 +120,67 @@
 
 .dolist-container li a {
   padding-left: 0;
-  color: #6e6e6e !important;
+  color: #6e6e6e;
   cursor: pointer;
+  text-decoration: none;
 }
 
-a {
-  text-decoration: none !important;
+.dolist-container li a:hover {
   color: #eab571;
 }
 
 .list-block-btn {
-  color: #eab571;
   font-size: 14px;
+}
+
+/* ====== SLIDE TEXT ===== */
+
+.text-carousel {
+  display: none;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  text-align: left;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  color: #888;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #eab571;
+  font-weight: bold;
+}
+
+.learn-more {
   display: inline-block;
-  cursor: pointer;
+  margin-top: 10px;
+  color: #eab571;
+  text-decoration: none;
+  position: relative;
+}
+
+.learn-more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #eab571;
+  transition: width 0.3s;
+  text-decoration: none;
+}
+
+.learn-more:hover::after {
+  width: 100%;
+  color: #eab571;
+  text-decoration: none;
 }
 
 @media (max-width: 860px) {
@@ -154,5 +199,14 @@ a {
     padding-bottom: 1%;
     font-size: 14px;
     width: 100%;
+  }
+  .item-dolist-container {
+    display: block;
+  }
+  .text-carousel {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 15px;
   }
 }
