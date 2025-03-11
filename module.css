@@ -1,0 +1,158 @@
+#body-how-we-do-it {
+  margin: 0;
+  overflow: auto;
+  background: #fbfbfb;
+  background-size: cover;
+}
+
+#particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+/* ============================================================================== */
+
+#canvas1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ============================================================================== */
+
+.content {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.header-hwd {
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 0px;
+  width: 60%;
+  font-size: 24px;
+}
+
+.headerText1 {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #eab571;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.headerText2 {
+  text-align: left;
+  font-size: 38px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.item-dolist-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.items-how-we-do {
+  margin-left: 40%;
+  flex-direction: column;
+  width: 20%;
+}
+
+.item1 {
+  margin-top: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.4;
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.item1:hover,
+.item1.active {
+  opacity: 1;
+}
+
+.lm {
+  font-size: 14px;
+  color: #eab571;
+  margin-top: 10px;
+  float: right;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.lm:hover {
+  text-decoration: underline;
+}
+
+.dolist-container {
+  text-align: left;
+  align-self: flex-end;
+  margin-right: 10%;
+  margin-top: 15%;
+  width: 10%;
+}
+
+.dolist-title {
+  color: #eab571;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+
+.dolist-container ul li {
+  padding: 5px;
+  list-style-type: none;
+  cursor: pointer;
+  padding-left: 0;
+  font-size: 12px;
+}
+
+.dolist-container li a {
+  padding-left: 0;
+  color: #6e6e6e !important;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none !important;
+  color: #eab571;
+}
+
+.list-block-btn {
+  color: #eab571;
+  font-size: 14px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@media (max-width: 860px) {
+  #body-how-we-do-it {
+    background-color: #000000;
+  }
+  .header-hwd {
+    width: auto;
+    color: #ffff;
+  }
+  .items-how-we-do {
+    display: none;
+  }
+  .dolist-container {
+    padding-left: 5%;
+    padding-bottom: 1%;
+    font-size: 14px;
+    width: 100%;
+  }
+}
