@@ -3,13 +3,17 @@
   overflow: auto;
   background: #fbfbfb;
   background-size: cover;
-  padding-bottom: 10px;
+  padding: 80px 1rem;
 }
 .carousel-slide a,
 .dolist-container a,
 .item1 a {
   text-decoration: none;
   color: #eab571;
+}
+
+.sticky-module-how-we-do-it {
+  padding: 0;
 }
 
 #particles {
@@ -68,7 +72,7 @@
 }
 
 .items-how-we-do {
-  margin-left: 40%;
+  margin-left: 35%;
   flex-direction: column;
   width: 20%;
 }
@@ -99,7 +103,7 @@
   align-self: flex-end;
   margin-right: 10%;
   margin-top: 15%;
-  width: 10%;
+  width: 11%;
 }
 
 .dolist-title {
@@ -108,6 +112,11 @@
   font-size: 12px;
   letter-spacing: 1px;
   margin-bottom: 2px;
+}
+
+.dolist-container ul {
+  padding-left: 0;
+  display: block;
 }
 
 .dolist-container ul li {
@@ -185,6 +194,7 @@
 
 @media (max-width: 860px) {
   #body-how-we-do-it {
+    overflow: hidden;
     background-color: #000000;
   }
   .header-hwd {

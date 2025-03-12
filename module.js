@@ -98,6 +98,16 @@ startSlide();
 track.addEventListener("mouseenter", stopSlide);
 track.addEventListener("mouseleave", startSlide);
 
+// ===== PEDDING =====
+
+var childElement = document.querySelector("#body-how-we-do-it");
+var currentElement = childElement;
+var parentLevel = 7;
+for (var i = 0; i < parentLevel; i++) {
+  currentElement = currentElement.parentElement;
+}
+currentElement.classList.add("sticky-module-how-we-do-it");
+
 // ==========================================================================
 
 // const canvas1 = document.getElementById("canvas1");
